@@ -1,0 +1,93 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    font-family: 'poppins', sans-serif;
+}
+body {
+    background: #e8e8e9;
+}
+.row {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-me2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*kita make responsive mobile dari ukuran 0 min nya max nya ke 700*/
+@media screen and (min-width:0px) and (max-width:700px){
+  .kalimat{
+  text-align: center;
+  margin:0 10px 5px 10px;
+  text-align: justify;
+  }
+}
+
+/*ini responsive versi laptop and pc*/
+@media screen and (min-width:701px)and (max-width:1300px){
+  .kalimat{
+   text-align: center;
+  margin: 0 200px 0 200px;
+   padding: 0;
+   text-align: justify;
+  }
+}
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+margin: 20px auto;
+}
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+}
+
+.socials .social-btn {
+    transition: .3s;
+}
+
+.socials .social-btn:hover {
+    transform: translateY(-5px);
+    color: #0d6efd !important;
+}
+.bgFooter{
+   background-color: #252525;
+    color: white;
+   font-size: 12px;
+   padding: 10px 0 10px 0;
+   margin: 45px 0 0 0;
+}
+.contact-info{
+ display: flex;
+ margin: 0 0 0 15px;
+}
+#iconAwesome,.contact{
+display: grid;
+align-items: center;
+padding: 0 5px 0 0;
+}
+.fa-location-dot,.fa-phone,.fa-envelope{
+color: rgb(0,150,254);
+}
